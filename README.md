@@ -85,10 +85,10 @@ You can see more related papers in [awesome-COS](https://github.com/ChunmingHe/a
 If you find the code helpful in your research or work, please cite the following paper(s).
 
 ```
-@article{he2025run,
-  title={RUN: Reversible Unfolding Network for Concealed Object Segmentation},
-  author={He, Chunming and Zhang, Rihan and Xiao, Fengyang and Fang, Chenyu and Tang, Longxiang and Zhang, Yulun and Kong, Linghe and Fan, Deng-Ping and Li, Kai and Farsiu, Sina},
-  journal={ICML},
+@article{he2025segment,
+  title={Segment concealed object with incomplete supervision},
+  author={He, Chunming and Li, Kai and Zhang, Yachao and Yang, Ziyun and Tang, Longxiang and Zhang, Yulun and Kong, Linghe and Farsiu, Sina},
+  journal={TPAMI},
   year={2025}
 }
 ```
