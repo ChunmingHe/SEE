@@ -61,14 +61,7 @@ python Train.py \
   --save_path YOUR_CHECKPOINT_PATH
 
 # Step 2: Co-training with SAM
-python segment-anything/train_semi_single_withsam.py \
-  --pretrained_model YOUR_CHECKPOINT_PATH/best_epoch.pth \
-  --epoch YOUR_EPOCH_2 \
-  --lr YOUR_LEARNING_RATE_2 \
-  --batchsize YOUR_BATCH_SIZE_2 \
-  --train_root YOUR_TRAININGSET_PATH \
-  --val_root YOUR_VALIDATIONSET_PATH \
-  --save_path YOUR_SAM_TRAIN_CHECKPOINT_PATH
+python segment-anything/train_semi_single_withsam.py 
 
 ### 4. Testing Configuration
 
