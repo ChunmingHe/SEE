@@ -49,18 +49,14 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 
 Run both steps in one code block:
 
-# Step 1: Train the small model
-python Train.py \
-  --epoch YOUR_EPOCH \
-  --lr YOUR_LEARNING_RATE \
-  --batchsize YOUR_BATCH_SIZE \
-  --trainsize YOUR_TRAINING_SIZE \
-  --train_root YOUR_TRAININGSET_PATH \
-  --val_root YOUR_VALIDATIONSET_PATH \
-  --save_path YOUR_CHECKPOINT_PATH
-
-# Step 2: Co-training with SAM
+Step 1: Train the small model
+```bash
+python Train.py  --epoch YOUR_EPOCH  --lr YOUR_LEARNING_RATE  --batchsize YOUR_BATCH_SIZE  --trainsize YOUR_TRAINING_SIZE  --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
+```
+Step 2: Co-training with SAM
+```bash
 python segment-anything/train_semi_single_withsam.py
+```
 
 ### 4. Testing Configuration
 
