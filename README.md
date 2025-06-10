@@ -70,6 +70,13 @@ python segment-anything/train_semi_single_withsam.py \
   --val_root YOUR_VALIDATIONSET_PATH \
   --save_path YOUR_SAM_TRAIN_CHECKPOINT_PATH
 
+### 4. Testing Configuration
+
+Our well-trained model is stored in [Google Drive](https://drive.google.com/drive/folders/1rA8RfYDmEkUESsRAEgVVqCj5ImkRNTsE?usp=sharing). After downloading, please change the file path in the corresponding code.
+```bash
+python Test.py  --testsize YOUR_IMAGESIZE  --pth_path YOUR_CHECKPOINTPATH  --test_dataset_path  YOUR_TESTINGSETPATH
+```
+
 ### 5. Evaluation
 
 - Matlab code: One-key evaluation is written in [MATLAB code](https://github.com/DengPingFan/CODToolbox), please follow the instructions in `main.m` and just run it to generate the evaluation results.
