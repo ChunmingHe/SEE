@@ -45,12 +45,12 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 - Download the [testing sets](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EVI0Bjs7k_VIvz4HmSVV9egBo48vjwX7pvx7deXBtooBYg?e=FjGqZZ) (COD10K-test + CAMO-test + CHAMELEON + NC4K ) used for testing
 - Refer to the [COS repository](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) for more datasets.
 
-### 3. Training Configuration
+## 3. Training Configuration
 
-# Step 1: Train the small model  
-First, train a lightweight model on your dataset using `Train.py`:
+Run both steps in one code block:
 
 ```bash
+# Step 1: Train the small model
 python Train.py \
   --epoch YOUR_EPOCH \
   --lr YOUR_LEARNING_RATE \
@@ -60,7 +60,15 @@ python Train.py \
   --val_root YOUR_VALIDATIONSET_PATH \
   --save_path YOUR_CHECKPOINT_PATH
 
-## Step 1: Train the small model
+# Step 2: Co-training with SAM
+python segment-anything/train_semi_single_withsam.py \
+  --pretrained_model YOUR_CHECKPOINT_PATH/best_epoch.pth \
+  --epoch YOUR_EPOCH_2 \
+  --lr YOUR_LEARNING_RATE_2 \
+  --batchsize YOUR_BATCH_SIZE_2 \
+  --train_root YOUR_TRAININGSET_PATH \
+  --val_root YOUR_VALIDATIONSET_PATH \
+  --save_path YOUR_SAM_TRAIN_CHECKPOINT_PATH
 
 ### 5. Evaluation
 
