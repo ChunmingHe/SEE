@@ -5,7 +5,7 @@ from collections import defaultdict
 import cv2
 from tqdm import tqdm
 from segment_anything.utils.transforms import ResizeLongestSide
-from util.utils2 import prepare_image, extract_bboxes_expand, extract_points, extract_mask
+from utils.utils2 import prepare_image, extract_bboxes_expand, extract_points, extract_mask
 
 
 def sam_input_prepare(image, pred_masks, image_embeddings=None, resize_transform=None, use_point=True, use_box=True, use_mask=True, add_neg=True, margin=0.0, gamma=1.0, strength=15):
