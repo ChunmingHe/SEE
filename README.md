@@ -47,10 +47,21 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 
 ### 3. Training Configuration
 
-- The pretrained model is stored in [Google Drive](https://drive.google.com/file/d/1OmE2vEegPPTB1JZpj2SPA6BQnXqiuD1U/view?usp=share_link). After downloading, please change the file path in the corresponding code.
+**Step 1 – Train the small model**  
+First, train a lightweight model on your dataset using `Train.py`, specifying all hyperparameters and paths:  
 ```bash
-python Train.py  --epoch YOUR_EPOCH  --lr YOUR_LEARNING_RATE  --batchsize YOUR_BATCH_SIZE  --trainsize YOUR_TRAINING_SIZE  --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
-```
+python Train.py \
+  --epoch YOUR_EPOCH \
+  --lr YOUR_LEARNING_RATE \
+  --batchsize YOUR_BATCH_SIZE \
+  --trainsize YOUR_TRAINING_SIZE \
+  --train_root YOUR_TRAININGSET_PATH \
+  --val_root YOUR_VALIDATIONSET_PATH \
+  --save_path YOUR_CHECKPOINT_PATH
+
+**Step 2  – Co-training with SAM**
+Next, load the small‐model checkpoint into the SAM co-training script and continue training (e.g. in a semi-supervised setup):
+python segment-anything/train_semi_single_withsam.py
 
 ### 4. Testing Configuration
 
