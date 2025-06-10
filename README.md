@@ -58,6 +58,10 @@ python segment-anything/train_semi_single_withsam.py
 ### 4. Testing Configuration
 
 Our trained model lives on Google Drive. After downloading, run:
+python Test.py \
+  --testsize YOUR_IMAGE_SIZE \
+  --pth_path YOUR_CHECKPOINT_PATH \
+  --test_dataset_path YOUR_TESTINGSET_PATH
 
 ### 5. Evaluation
 
