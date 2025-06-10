@@ -54,12 +54,10 @@ Step 2  – Co-training with SAM
 Next, load the small‐model checkpoint into the SAM co-training script and continue training (e.g. in a semi-supervised setup):
 python segment-anything/train_semi_single_withsam.py
 
+
 ### 4. Testing Configuration
 
-Our well-trained model is stored in [Google Drive](https://drive.google.com/drive/folders/1wIEfCfAPx3xBtjf41gBHUydg6_sWJMLB?usp=sharing). After downloading, please change the file path in the corresponding code.
-```bash
-python Test.py  --testsize YOUR_IMAGESIZE  --pth_path YOUR_CHECKPOINTPATH  --test_dataset_path  YOUR_TESTINGSETPATH
-```
+Our trained model lives on Google Drive. After downloading, run:
 
 ### 5. Evaluation
 
