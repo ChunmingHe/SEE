@@ -60,7 +60,7 @@ python segment-anything/train_semi_single_withsam.py
 
 ### 4. Testing Configuration
 
-Our well-trained model is stored in [Google Drive](https://drive.google.com/drive/folders/1rA8RfYDmEkUESsRAEgVVqCj5ImkRNTsE?usp=sharing). After downloading, please change the file path in the corresponding code.
+Our well-trained model is stored in [Google Drive](https://drive.google.com/drive/folders/1wIEfCfAPx3xBtjf41gBHUydg6_sWJMLB?usp=drive_link). After downloading, please change the file path in the corresponding code.
 ```bash
 python Test.py  --testsize YOUR_IMAGESIZE  --pth_path YOUR_CHECKPOINTPATH  --test_dataset_path  YOUR_TESTINGSETPATH
 ```
