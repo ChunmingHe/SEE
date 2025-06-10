@@ -45,7 +45,7 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 - Download the [testing sets](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EVI0Bjs7k_VIvz4HmSVV9egBo48vjwX7pvx7deXBtooBYg?e=FjGqZZ) (COD10K-test + CAMO-test + CHAMELEON + NC4K ) used for testing
 - Refer to the [COS repository](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) for more datasets.
 
-## 3. Training Configuration
+# 3. Training Configuration
 
 Run both steps in one code block:
 
