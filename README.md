@@ -45,7 +45,24 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 - Download the [testing sets](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EVI0Bjs7k_VIvz4HmSVV9egBo48vjwX7pvx7deXBtooBYg?e=FjGqZZ) (COD10K-test + CAMO-test + CHAMELEON + NC4K ) used for testing
 - Refer to the [COS repository](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) for more datasets.
 
+### 3. Training Configuration
 
+- The pretrained model is stored in [Google Drive](https://drive.google.com/file/d/1OmE2vEegPPTB1JZpj2SPA6BQnXqiuD1U/view?usp=share_link). After downloading, please change the file path in the corresponding code.
+```bash
+python Train.py  --epoch YOUR_EPOCH  --lr YOUR_LEARNING_RATE  --batchsize YOUR_BATCH_SIZE  --trainsize YOUR_TRAINING_SIZE  --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
+```
+
+### 4. Testing Configuration
+
+Our well-trained model is stored in [Google Drive](https://drive.google.com/drive/folders/1rA8RfYDmEkUESsRAEgVVqCj5ImkRNTsE?usp=sharing). After downloading, please change the file path in the corresponding code.
+```bash
+python Test.py  --testsize YOUR_IMAGESIZE  --pth_path YOUR_CHECKPOINTPATH  --test_dataset_path  YOUR_TESTINGSETPATH
+```
+
+### 5. Evaluation
+
+- Matlab code: One-key evaluation is written in [MATLAB code](https://github.com/DengPingFan/CODToolbox), please follow the instructions in `main.m` and just run it to generate the evaluation results.
+  
 ## 🔍 Results
 
 We achieved state-of-the-art performance on *camouflaged object detection*, *polyp image segmentation*, *medical tubular object segmentation*, and *transparent object detection*. More results can be found in the paper.
