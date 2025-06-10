@@ -14,6 +14,7 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 
 ## 🔥 News
 
+- **2025-06-04:** We release the code, the pretrained models, and the results.
 
 - **2025-06-04:** We release this repository.
 
