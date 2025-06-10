@@ -39,6 +39,11 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 - Creating a virtual environment in terminal: `conda create -n SEE python=3.8`.
 - Installing necessary packages: `conda env create -f environment.yml`
 
+### 2. Downloading Training and Testing Datasets
+
+- Download the [training set](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EQ75AD2A5ClIgqNv6yvstSwBQ1jJNC6DNbk8HISuxPV9QA?e=UhHKSD) (COD10K-train) used for training 
+- Download the [testing sets](https://anu365-my.sharepoint.com/:u:/g/personal/u7248002_anu_edu_au/EVI0Bjs7k_VIvz4HmSVV9egBo48vjwX7pvx7deXBtooBYg?e=FjGqZZ) (COD10K-test + CAMO-test + CHAMELEON + NC4K ) used for testing
+- Refer to the [COS repository](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) for more datasets.
 
 
 ## 🔍 Results
