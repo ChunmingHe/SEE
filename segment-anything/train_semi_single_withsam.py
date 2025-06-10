@@ -116,7 +116,7 @@ class StochasticAugmentation:
         self.rotations = [T.RandomRotation(degrees=0), T.RandomRotation(degrees=90),
                           T.RandomRotation(degrees=180), T.RandomRotation(degrees=270)]
         self.scalings = [T.Resize((int(1024 * 0.5), int(1024 * 0.5))),
-                         T.Resize((384, 384)),
+                         T.Resize((1024 , 1024 )),
                          T.Resize((int(1024 * 2), int(1024 *2)))]
 
     def apply(self, image):
