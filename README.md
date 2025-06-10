@@ -54,7 +54,7 @@ Step 1: Train the segmenter
 python Train.py  --epoch YOUR_EPOCH  --lr YOUR_LEARNING_RATE  --batchsize YOUR_BATCH_SIZE  --trainsize YOUR_TRAINING_SIZE  --train_root YOUR_TRAININGSETPATH  --val_root  YOUR_VALIDATIONSETPATH  --save_path YOUR_CHECKPOINTPATH
 ```
 Step 2: Co-training with SAM
-The pretrained model is stored in Google Drive. After downloading, please change the file path in the corresponding code.
+The pretrained model is stored in [Google Drive](https://github.com/facebookresearch/segment-anything). After downloading, please change the file path in the corresponding code.
 ```bash
 python segment-anything/train_semi_single_withsam.py
 ```
