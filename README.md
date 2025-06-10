@@ -46,8 +46,7 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 - Refer to the [COS repository](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) for more datasets.
 
 ### 3. Training Configuration
-
-**Step 1 – Train the small model**  
+Step 1 – Train the small model  
 First, train a lightweight model on your dataset using `Train.py`, specifying all hyperparameters and paths:  
 ```bash
 python Train.py \
@@ -59,7 +58,7 @@ python Train.py \
   --val_root YOUR_VALIDATIONSET_PATH \
   --save_path YOUR_CHECKPOINT_PATH
 
-**Step 2  – Co-training with SAM**
+Step 2  – Co-training with SAM
 Next, load the small‐model checkpoint into the SAM co-training script and continue training (e.g. in a semi-supervised setup):
 python segment-anything/train_semi_single_withsam.py
 
