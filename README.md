@@ -49,7 +49,6 @@ The extended version of our previous NeurIPS 2023 paper—[WS-SAM](https://githu
 
 Run both steps in one code block:
 
-```bash
 # Step 1: Train the small model
 python Train.py \
   --epoch YOUR_EPOCH \
@@ -61,7 +60,7 @@ python Train.py \
   --save_path YOUR_CHECKPOINT_PATH
 
 # Step 2: Co-training with SAM
-python segment-anything/train_semi_single_withsam.py 
+python segment-anything/train_semi_single_withsam.py
 
 ### 4. Testing Configuration
 
