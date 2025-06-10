@@ -158,11 +158,11 @@ if __name__ == '__main__':
     parser.add_argument('--decay_epoch', type=int, default=80, help='every n epochs decay learning rate')
     parser.add_argument('--load', type=str, default=None, help='train from checkpoints')
     parser.add_argument('--gpu_id', type=str, default='0,1', help='train use gpu')
-    parser.add_argument('--train_root', type=str, default='/hpc/home/ch594/data/cod/TrainDataset/',
+    parser.add_argument('--train_root', type=str, default='',
                         help='the training rgb images root')
-    parser.add_argument('--val_root', type=str, default='/hpc/home/ch594/data/cod/COD-TestDataset/COD10K/',
+    parser.add_argument('--val_root', type=str, default='',
                         help='the test rgb images root')
-    parser.add_argument('--save_path', type=str,default='/hpc/home/ch594/FEDER/cod10k/model_new/',help='the path to save model and log')
+    parser.add_argument('--save_path', type=str,default='',help='the path to save model and log')
     opt = parser.parse_args()
 
 
@@ -190,7 +190,7 @@ if __name__ == '__main__':
     # load data
     print('load data...')
     train_loader = get_loader(image_root=opt.train_root + 'Imgs/',
-                              gt_root=opt.train_root + 'GT_sup/',
+                              gt_root=opt.train_root + 'GT/',
                               edge_root=opt.train_root + 'Edge/',
                               batchsize=opt.batchsize,
                               trainsize=opt.trainsize,
